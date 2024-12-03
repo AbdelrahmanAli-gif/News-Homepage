@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --beforeWidth: 0vw;
+    --offWhite: hsl(36, 100%, 99%);
+    --grayishBlue: hsl(233, 8%, 79%);
+    --darkGrayishBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(240, 100%, 5%);
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.grayish-blue {
+    color: var(--darkGrayishBlue);
+}
+
+.bold-weight {
+    font-weight: 900;
+}
+
+.read-more {
+    border: none;
+    outline: none;
+    background-color: var(--softRed);
+    text-transform: uppercase;
+    padding: 15px 25px;
+    letter-spacing: 2px;
+}
+
+.sidebar {
+    background-color: var(--veryDarkBlue);
+    color: var(--grayishBlue);
+}
+
+.sidebar-horizontal-line {
+    margin: 40px 0px;
+}
+
+.sidebar-title {
+    color: var(--softOrange);
+}
+
+.sidebar-card-title {
+    color: white;
+    font-weight: 700;
+}
+
+.second-section-card,
+.second-section-card-text {
+    display: flex;
+}
+
+.second-section-card-text {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-section-card-number {
+    color: var(--softRed);
+}
+
+.navbar-container {
+    align-items: center;
+}
+
+.second-section-card {
+    gap: 15px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) { 
+    .navbar-container,
+    .navbar-list {
+        display: flex;
+    }
+    
+    .navbar-container,
+    .main-section,
+    .second-section {
+        padding: 10px;
+    }
+
+    .navbar-container,
+    .second-section-card-text {
+        justify-content: space-between;
+    }
+
+    .navbar-list {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar-list, 
+    .navbar-btn {
+        background-color: white;
+    }
+
+    .navbar-list,
+    .navbar-list::before {
+        height: 100vh;
+        top: 0%;
+        transition: all 1s ease-in;
+    }
+
+    .navbar-container {
+        overflow-x: hidden;
+    }
+
+    .navbar-list {
+        width: 70vw;
+        left: 100%;
+        padding: 15vh 0px 40vh 20px;
+        font-size: 18px;
+        position: fixed;
+    }
+
+    .navbar-list::before {
+        content: "";
+        width: var(--beforeWidth);
+        right: 100%;
+        background-color: rgba(0, 0, 0, 0.403);
+        position: absolute;
+    }
+
+    .navbar-btn {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-btn {
+        z-index: 2;
+        display: block;
+    }
+
+    .main-section-img,
+    .main-section {
+        max-width: 100%;
+    }
+
+    .main-section-title {
+        font-size: 45px;
+    }
+
+    .main-section-paragraph,
+    .read-more {
+        font-size: 15px;
+    }
+
+    .main-section-paragraph,
+    .sidebar-card-paragraph,
+    .second-section-paragraph {
+        line-height: 30px;
+    }
+
+    .main-section-paragraph {
+        margin: 10px 0px 20px 0px;
+    }
+
+    .sidebar {
+        margin: 40px 10px;
+        padding: 15px;
+    }
+
+    .sidebar-title {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-card-title {
+        font-size: 22px;
+        margin: 20px 0px;
+    }
+
+    .second-section-card {
+        margin: 25px 0px;
+    }
+
+    .second-section-card-img {
+        max-width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    body,
+    .sidebar {
+        padding: 15px;
+    }
+    
+    .navbar-container, 
+    .navbar-list,
+    .main-section-text-container, 
+    .main-section-inner-text-container, 
+    .second-section {
+        display: flex;
+    }
+
+    .navbar-container,
+    .main-section-img,
+    .main-section-inner-text-container {
+        width: 100%;
+    }
+
+    .navbar-container, 
+    .main-section-text-container {
+        justify-content: space-between;
+    }
+
+    .navbar-container {
+        margin-bottom: 25px;
+    }
+
+    .navbar-list, 
+    .second-section {
+        align-items: center;
+    }
+
+    .main-section-text-container,
+    .second-section-card {
+        align-items: flex-start;
+    }
+
+    .second-section-card-text, 
+    .second-section-card,
+    .second-section,
+    .sidebar {
+        justify-content: space-around;
+    }
+
+    .main-section-text-container, 
+    .grid-container,
+    .main-section-inner-text-container {
+        gap: 25px;
+    }
+
+    .sidebar-card-paragraph, 
+    .main-section-paragraph {
+        letter-spacing: 2px;
+    }
+    
+    .navbar-btn {
+        display: none;
+    }
+    
+    .navbar-list {
+        width: 40%;
+    }
+
+    .main-section {
+        grid-area: main;
+    }
+
+    .main-section-title {
+        font-size: 78px;
+    }
+
+    .main-section-inner-text-container {
+        flex-direction: column;
+        height: 260px;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+
+    .main-section-paragraph {
+        font-size: 18px;
+        justify-self: flex-start;
+    }
+
+    .read-more {
+        justify-self: flex-end;
+        font-size: 18px;
+    }
+
+    .sidebar {
+        grid-area: side;
+        height: 100%;
+        align-self: flex-start;
+        padding: 25px 15px
+    }
+
+    .sidebar-title {
+        height: 10%;
+    }
+
+    .sidebar-card {
+        height: 30%;
+    }
+
+    .sidebar-card-title {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-card-paragraph {
+        word-spacing: 2px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template:
+        'main main main side';
+    }
+
+    .second-section {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .second-section-card-img {
+        width: 50%;
+    }
+
+    .second-section-card {
+        width: 30%;
+    }
+
+    .second-section-card-text {
+        gap: 35px;
+    }
+
+    .second-section-card-number {
+        font-size: 32px;
+    }
+
+    .read-more:hover,
+    .sidebar-card-title:hover,
+    .navbar-item:hover,
+    .second-section-card-title:hover {
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    }
+
+    .navbar-item:hover,
+    .second-section-card-title:hover {
+        color: var(--softRed);
+    }
+
+    .sidebar-card-title:hover {
+        color: var(--softOrange);
+    }
+
+    .read-more:hover {
+        background-color: var(--veryDarkBlue);
+        color: white;
+    }
+
+}

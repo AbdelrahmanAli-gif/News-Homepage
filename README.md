@@ -15,10 +15,10 @@ Uses semantic HTML for better screen reader support.
 Includes hover and focus states for interactivity.
 
 ## Technologies Used
-HTML: Semantic structure and layout.
-CSS: Styling with a focus on responsiveness and modern design principles.
-JavaScript: Adds interactivity (e.g., navigation toggle and responsive image updates).
-Google Fonts: Inter font for clean typography.
+1. HTML: Semantic structure and layout.
+2. CSS: Styling with a focus on responsiveness and modern design principles.
+3. JavaScript: Adds interactivity (e.g., navigation toggle and responsive image updates).
+4. Google Fonts: Inter font for clean typography.
 
 ### Challenge Link
 https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl

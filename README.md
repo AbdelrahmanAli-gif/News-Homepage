@@ -20,5 +20,8 @@ Includes hover and focus states for interactivity.
 3. JavaScript: Adds interactivity (e.g., navigation toggle and responsive image updates).
 4. Google Fonts: Inter font for clean typography.
 
+## Preview
+Live Demo https://abdelrahmanali-gif.github.io/News-Homepage/
+
 ### Challenge Link
 https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl
